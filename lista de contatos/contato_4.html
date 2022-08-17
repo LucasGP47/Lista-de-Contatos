@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Lista de contatos</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    
+    </head>
+
+    <body>
+        <h1>Foto:</h1>
+        <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" face="Times New Roman "></p>
+<p><label for="file" ></label></p>
+<p><img id="output" width="200" /></p>
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+       
+        <h1>Dados:</h1>
+        <ul>
+            <li>Nome: <input type="text"> <input type="submit" value="Enviar"> </li>
+
+            <br>
+
+            <li>Email: <input type="email"> <input type="submit" value="Enviar"> </li>
+
+            <br>
+
+            <li>Telefone: <input type="number"> <input type="submit" value="Enviar"> </li>
+
+            <br>
+
+            <li>Data de Nascimento: <input type="date"> <input type="submit" value="Enviar"> </li>
+
+            <br>
+
+            <li>Idade: <input type="number"> <input type="submit" value="Enviar"> </li>
+
+            <br>
+
+            <li>Genero: <select value="genero" name="sexo">
+                <option value="sexo">Masculino</option>
+                <option value="sexo">Feminino</option>
+                <option value="sexo">Outro</option>
+            </select><br> </li>
+
+            <br>
+            
+            <div>
+            <li>Parente? </li>
+                <input type="radio" id="html" name="parente" value="sim">Sim<br>
+                <input type="radio" id="html" name="parente" value="não">Não<br>
+            </div>    
+            
+            <br>
+
+            <li>Onde o conhece?: <input type="text"> <input type="submit" value="Enviar"> </li> 
+            
+            <br>
+            
+            <div>
+            <li>Rede Social: <select value="genero" name="rede">
+                <option value="rede">Instagram</option>
+                <option value="rede">Linkedin</option>
+                <option value="rede">Facebook</option>
+            </select><br>
+            <br>
+            Link: <input type="text">
+            </li>
+            </div>  
+        
+           
+
+            
+            
+
+
+
+
+
+
+
+
+
+        </ul>
+        
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+</html>
